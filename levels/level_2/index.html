@@ -5,10 +5,8 @@
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </head>
-  <body ng-controller="StoreController as store">
+  <body class="list-group" ng-controller="StoreController as store">
 
-    <!--  Products Container  -->
-    <div class="list-group">
       <!--  Product Container  - extended for multiple products-->
       <div class="list-group-item" ng-repeat="product in store.products">
         <h3>
@@ -16,16 +14,16 @@
           <em class="pull-right">{{product.price | currency}}</em>
         </h3>
 
-        <!-- Image Gallery  - show only if there are products-->
-        <div ng-show="product.images.length">
-        <div ng-show="product.images">
-          <img class="img img-circle img-thumbnail center-block" ng-src="{{product.images[0]}}" />
-          <ul class="clearfix">
-            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images"> <img ng-src="{{image}}" /> </li>
-          </ul>
-        </div>
-
+      <!-- Image Gallery  - show only if there are products-->
+      <div class='gallery' ng-show="product.images.length" ng-controller="GalleryController as gal">
+        <img ng-src="{{product.images[gal.current]}}" />
+        <ul class="list-inline thumbs">
+          <li class="thumbnail" ng-repeat="image in product.images">
+            <img ng-src="{{image}}" />
+          </li>
+        </ul>
       </div>
+      
     </div>
   </body>
 </html>
