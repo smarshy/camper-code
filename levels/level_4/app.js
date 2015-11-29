@@ -53,7 +53,7 @@
 
   app.directive("productSpecs", function() {
     return {
-      restrict: 'E',
+      restrict: 'A',
       templateUrl: "product-specs.html"
     };
   });
