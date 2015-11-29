@@ -36,6 +36,14 @@
 
 });
 
+  app.directive('productDescription',function(){
+    //directive type in restrict and filename in templateUrl
+    return { 
+      restrict: 'E',
+      templateUrl: "product-description.html"    
+      };
+  });
+
 var gems = [{
   name: 'Azurite',
   description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
