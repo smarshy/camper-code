@@ -50,8 +50,9 @@
       this.setTab = function(setTab) {
         this.tab = setTab;
       };
-    } 
-    
+    }, 
+    controllerAs:'tab'  
+
   };
 });
 
