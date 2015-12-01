@@ -36,6 +36,16 @@
 
 });
 
+  app.directive("productTabs", function() {
+    return {
+      restrict:"E",
+      templateUrl: "product-tabs.html"
+    };
+  });
+
+
+  
+
   app.directive('productDescription',function(){
     //directive type in restrict and filename in templateUrl
     return { 
