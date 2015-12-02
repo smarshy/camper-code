@@ -13,8 +13,7 @@
       product.reviews.push(this.review);
       this.review = {};
     };
-
-});
+  });
 
   app.directive("productGallery", function() {
     return {
@@ -37,18 +36,17 @@
       templateUrl: "product-tabs.html",
 
       controller:function(){
-      this.tab = 1;
-      this.isSet = function(checkTab) {
-        return this.tab === checkTab;
-      };
-
-      this.setTab = function(setTab) {
-        this.tab = setTab;
-      };
-    }, 
-    controllerAs:'tab'  
-  };
-});
+        this.tab = 1;
+        this.isSet = function(checkTab) {
+          return this.tab === checkTab;
+        };
+        this.setTab = function(setTab) {
+          this.tab = setTab;
+        };
+      }, 
+      controllerAs:'tab'  
+    };
+  });
 
 
 
@@ -58,7 +56,7 @@
     return { 
       restrict: 'E',
       templateUrl: "product-description.html"    
-      };
+    };
   });
 
   app.directive("productReviews", function() {
