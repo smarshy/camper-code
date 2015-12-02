@@ -24,6 +24,14 @@
 
 });
 
+  app.directive("productGallery", function() {
+    return {
+      restrict: "E",
+      templateUrl: "product-gallery.html"
+    };
+  });
+  
+
   app.directive("productTabs", function() {
     return {
       restrict:"E",
@@ -40,7 +48,6 @@
       };
     }, 
     controllerAs:'tab'  
-
   };
 });
 
