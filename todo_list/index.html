@@ -8,9 +8,9 @@
 <body ng-app="todoListApp">
    <h1>My TODOs</h1>
   <div ng-controller="mainCtrl" class="list">
-    <input type="checkbox"/>
-    <label class="editing-label">A sample todo!</label>
-    <input class="editing-label" type="text"/>
+    <input ng-model="todo.completed" type="checkbox"/>
+    <label class="editing-label">{{todo.name}}</label>
+    <input ng-model="todo.name" class="editing-label" type="text"/>
     <div class="actions">
       <a href="">edit</a>
       <a href="">save</a>

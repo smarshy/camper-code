@@ -54,9 +54,10 @@ a {
   .list .add {
     padding: 25px 0 27px 25px; }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
     display:none;
 }
+*/
 input[type="checkbox"] + span {
     display:inline-block;
     width:19px;
