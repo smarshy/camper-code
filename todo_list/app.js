@@ -1,14 +1,15 @@
 angular.module("todoListApp", [])
-.controller('mainCtrl', function($scope) {
+.controller('mainCtrl', function($scope,dataService) {
 
-$scope.todos = getTodos
+  dataService.getTodos(function(response) {  
+      $scope.todos = response.data;
+    });
 
 })
 .service('dataService', function($http) {
 
   this.getTodos = function(callback){
-    $http.get('mock/todos.json')
-    .then(callback)
+    $http.get('mock/todos.json').then(callback)
   };  
   
 });
