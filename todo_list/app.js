@@ -10,6 +10,10 @@ angular.module("todoListApp", [])
     $scope.todos.splice(index, 1);
   };
 
+  $scope.saveTodo = function(todo) {
+    dataService.saveTodo(todo);
+  };
+
 })
 .service('dataService', function($http) {
 
@@ -19,6 +23,10 @@ angular.module("todoListApp", [])
 
   this.deleteTodo = function(todo) {
     console.log("The " + todo.name + " todo has been deleted!");
+  };
+
+  this.saveTodo = function(todo) {
+    console.log("The " + todo.name + " todo has been saved!");
   };
   
 });

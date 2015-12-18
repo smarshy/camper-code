@@ -14,7 +14,7 @@
       <input ng-change="todo.edited = true" ng-model="todo.name" ng-blur="editing = false;" ng-show="editing" class="editing-label" type="text"/>
       <div class="actions">
         <a href="" ng-click=" editing = !editing">edit</a>
-        <a href="">save</a>
+        <a href="" ng-click="saveTodo(todo)">save</a>
         <a href="" ng-click="deleteTodo(todo, $index)" class="delete">delete</a>
      </div>
     </div>
