@@ -5,6 +5,11 @@ angular.module("todoListApp", [])
       $scope.todos = response.data;
     });
 
+  $scope.addTodo = function() {
+    var todo = {name: "This is a new todo."};
+    $scope.todos.push(todo);
+  };
+
   $scope.deleteTodo = function(todo, index) {
     dataService.deleteTodo(todo);
     $scope.todos.splice(index, 1);
