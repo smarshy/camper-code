@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    background:#092B40;
+    color: white;   
+}
+.container-fluid {
+    border:none;
+    margin-top: 30px;
+    padding-top: 0;
+    height: 450px;
+}
+
+h2 {
+    color: black;
+}
+
+
+div {
+    padding: 20px;
+    border: 1px solid black;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#top-left {
+    border-top: none;
+    border-left: none;
+}
+#top-middle {
+    border-top: none;
+}
+#top-right {
+    border-top: none;
+    border-right: none;
+}
+#center-left {
+    border-left: none;
+}
+#center-middle {
+
+}
+#center-right {
+    border-right: none;
+}
+#bottom-left {
+    border-left: none;
+    border-bottom: none;
+}
+#bottom-middle {
+    border-bottom: none;
+}
+#bottom-right {
+    border-right: none;
+    border-bottom: none;
+ 
+}
+.modal-header,.modal-body {            
+border:1px solid #111111; 
+background:rgba(0,0,0,0.5);
+color:white;    
+text-shadow:1px 1px 1px black;
+    
+}
+
+.styled{
+  background-color:white;
+  border:none;
+  color:black; 
+}
+
+
+.modal-content {
+    border:1px solid white;
+    background:rgba(0,0,0,0.8);
+}
+
+.modal-dialog {
+    border: none;
+}
+.modal-footer {
+    text-align: center;
+  background:rgba(0,0,0,0.5);
+}
+.btn {
+    font-size: 32px;
+    height:60px;
+    width:60px;
+    font-weight: 800;
+  border-radius:50%;
+}
+
+.btn:hover{
+  color:white;
+  background:#F9690E;
+}
+
+
+.square {
+    width: 450px;
+    height: 450px;
+    border: none;
+    margin: 0 auto;
+   background-color:#909090;
+}
+.result-box{
+color:black;
+    border:none;
+  width:20%;
+  height:40px;
+    margin-left:40%;
+  background-color:black;
+  color:white;
+  border:1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  padding:5px;
+
+}
+
+#my-message{
+  padding:0;
+  /*  width:20%;
+    margin-left:40%;
+    height:100%;
+    border:none;
+    border-bottom:1px solid #EOEOEO;
+    border-radius:20%;
+    background-color:#E0E0E0;
+*/
+}
+.spacer{
+  height:40px;
+  border:none;
+}
+.col-xs-4 {
+    height: 33.333333333333333333333333333%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
